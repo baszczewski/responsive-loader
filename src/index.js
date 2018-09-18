@@ -21,6 +21,7 @@ type Config = {
   max: string | number | void,
   steps: string | number | void,
   name: string | void,
+  publicPath: string | void,
   context: string | void,
   placeholderSize: string | number | void,
   quality: string | number | void,
