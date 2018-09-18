@@ -116,7 +116,7 @@ module.exports = function loader(content: Buffer) {
 
     return {
       src: '__webpack_public_path__ + ' + JSON.stringify(fileName + ' ' + width + 'w'),
-      path: '__webpack_public_path__ + ' + JSON.stringify(publicPath + fileName),
+      path: '__webpack_public_path__ + ' + JSON.stringify(path.join(publicPath, fileName)),
       width: width,
       height: height
     };
